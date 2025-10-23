@@ -46,6 +46,12 @@
       color: #fff;
       position: relative;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     }
     .card h2 {
       font-size: 32px;
@@ -92,7 +98,7 @@
   background: linear-gradient(90deg, #005f33, #018c46);
   box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 ">
-  <img src="Safaricom.png" alt="Safaricom Logo" style="
+  <img src="images/Safaricom.png" alt="Safaricom Logo" style="
     height: 70px;
     width: auto;
     max-width: 45%;
@@ -100,7 +106,7 @@
     transition: transform 0.3s ease;
   " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
   
-  <img src="skiza.png" alt="Skiza Logo" style="
+  <img src="images/skiza.png" alt="Skiza Logo" style="
     height: 70px;
     width: auto;
     max-width: 45%;
@@ -113,26 +119,32 @@
   <h1>GET YOUR FREE DATA BUNDLES!</h1>
   <p>Subscribe to Skiza Tunes today and enjoy amazing free data offers.</p>
 
-  <div class="card">
-    <span>click here</span>
-    <h2>5GB</h2>
-    <p>FREE DATA<br>for new subscribers</p>
-    <a href="tel:*811*336#" class="btn">Learn More</a>
-  </div>
+  <a href="tel:*811*336#" style="text-decoration: none; color: inherit;">
+    <div class="card">
+      <span>click here</span>
+      <h2>5GB</h2>
+      <p>FREE DATA<br>for new subscribers</p>
+      <div class="btn">Learn More</div>
+    </div>
+  </a>
 
-  <div class="card">
-    <span>click here</span>
-    <h2>10GB</h2>
-    <p>FREE DATA<br>for 7 Days subscription</p>
-    <a href="tel:*811*336#" class="btn">Learn More</a>
-  </div>
+  <a href="tel:*811*336#" style="text-decoration: none; color: inherit;">
+    <div class="card">
+      <span>click here</span>
+      <h2>10GB</h2>
+      <p>FREE DATA<br>for 7 Days subscription</p>
+      <div class="btn">Learn More</div>
+    </div>
+  </a>
 
-  <div class="card">
-    <span>click here</span>
-    <h2>25GB</h2>
-    <p>FREE DATA<br>for 1 month subscription</p>
-    <a href="tel:*811*336#" class="btn">Learn More</a>
-  </div>
+  <a href="tel:*811*336#" style="text-decoration: none; color: inherit;">
+    <div class="card">
+      <span>click here</span>
+      <h2>25GB</h2>
+      <p>FREE DATA<br>for 1 month subscription</p>
+      <div class="btn">Learn More</div>
+    </div>
+  </a>
 
   <footer>
     Terms and conditions apply. Offer valid for a limited time only.<br>
@@ -140,4 +152,3 @@
   </footer>
 </body>
 </html>
-
